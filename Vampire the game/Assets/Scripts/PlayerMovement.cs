@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask WhatIsGround;
     public float groundCheckRadius;
     public Transform groundCheck;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +26,21 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        if(Input.GetAxis("Horizontal")>-0.01f)
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
+        if (Input.GetAxis("Horizontal") < -0.01f)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+        }
 
         if ((IsGrounded == true && Input.GetKeyDown(KeyCode.W)) || (IsGrounded == true && Input.GetKeyDown(KeyCode.Space)))
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
-
+        
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
     }
 
