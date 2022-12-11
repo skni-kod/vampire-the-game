@@ -30,7 +30,9 @@ public class PlayerMovement : MonoBehaviour
     {
         pointsText.text = points.ToString();
         animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
-        if(Input.GetAxis("Horizontal")>-0.01f)
+        animator.SetBool("Jump", !IsGrounded);
+        
+        if (Input.GetAxis("Horizontal")>-0.01f)
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
         }
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = new Quaternion(0, 180, 0, 0);
         }
 
-        if ((IsGrounded == true && Input.GetKeyDown(KeyCode.W)) || (IsGrounded == true && Input.GetKeyDown(KeyCode.Space)))
+        if ((IsGrounded == true && Input.GetButtonDown("Jump")))
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
