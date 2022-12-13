@@ -32,21 +32,25 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
         animator.SetBool("Jump", !IsGrounded);
         
-        if (Input.GetAxis("Horizontal")>-0.01f)
+        if (Input.GetAxis("Horizontal")> 0f)
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
         }
-        if (Input.GetAxis("Horizontal") < -0.01f)
+        if (Input.GetAxis("Horizontal") < 0f)
         {
             transform.rotation = new Quaternion(0, 180, 0, 0);
+            
         }
 
         if ((IsGrounded == true && Input.GetButtonDown("Jump")))
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
-        
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
+
+        var horizontal = Input.GetAxisRaw("Horizontal") ;
+        var velocity = rb.velocity;
+        velocity.x = horizontal * moveSpeed;
+        rb.velocity = velocity;
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
