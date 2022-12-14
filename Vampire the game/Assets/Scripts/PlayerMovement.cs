@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpHeight;
-    public int  points;
+
     private Rigidbody2D rb;
     public bool IsGrounded;
     public LayerMask WhatIsGround;
     public float groundCheckRadius;
     public Transform groundCheck;
     public Animator animator;
-    public TextMeshProUGUI pointsText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pointsText.text = points.ToString();
+       
         animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
         animator.SetBool("Jump", !IsGrounded);
         
@@ -52,12 +52,5 @@ public class PlayerMovement : MonoBehaviour
         velocity.x = horizontal * moveSpeed;
         rb.velocity = velocity;
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Point"))
-        {
-            points++;
-            Destroy(collision.gameObject);
-        }
-    }
+   
 }
