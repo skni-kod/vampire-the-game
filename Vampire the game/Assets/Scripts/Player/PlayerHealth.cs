@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
-    private int currentHealth;
+    [SerializeField] protected int maxHealth = 100;
+    protected int currentHealth;
     public HealthBar healthBar;
     // Start is called before the first frame update
     void Start()
@@ -24,5 +24,21 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
+    }
+
+    public void healHealth(int health)
+    {
+        currentHealth += health;
+        healthBar.setHealth(currentHealth);
+    }
+
+    public int CurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public int MaxHealth()
+    {
+        return maxHealth;
     }
 }
