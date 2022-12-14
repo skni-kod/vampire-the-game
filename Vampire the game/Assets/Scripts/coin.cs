@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Coin : MonoBehaviour
+public class coin : MonoBehaviour
 {
     public int points = 0;
     public TextMeshProUGUI pointsText;
