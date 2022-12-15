@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,8 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6eab03a9b78a0c4d9d1cf9fce488d79
-      internalID: -602303104
+      spriteID: 72f4996eae1314340b085dce1439a5ec
+      internalID: 2002637896
       vertices: []
       indices: 
       edges: []
@@ -129,10 +129,10 @@ TextureImporter:
       name: life_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98c475b508858904884a26d45f6f0572
-      internalID: -1674444720
+      spriteID: c7e8f4c742d59ce45b0e9023a11a65c7
+      internalID: -159950525
       vertices: []
       indices: 
       edges: []
@@ -150,10 +150,10 @@ TextureImporter:
       name: life_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5a13315986e6449a608f8a37403296
-      internalID: -357384366
+      spriteID: a15ed61f4f261ca419bee9db0c09e57a
+      internalID: -1020904781
       vertices: []
       indices: 
       edges: []
@@ -171,10 +171,10 @@ TextureImporter:
       name: life_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03f61f5a70286d47a21898b223216bd
-      internalID: 267218577
+      spriteID: a49ac6c20b736a848bff6da910c09c4d
+      internalID: 828510155
       vertices: []
       indices: 
       edges: []
@@ -192,10 +192,10 @@ TextureImporter:
       name: life_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceb67814b1bf7c64bbb38e2f28a394e6
-      internalID: -992189950
+      spriteID: e42601dddce760f42901bcffcba8ab5f
+      internalID: 861151285
       vertices: []
       indices: 
       edges: []
@@ -213,10 +213,10 @@ TextureImporter:
       name: life_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b3e56de78d8834aaa3ae76b86ca99d
-      internalID: -558651250
+      spriteID: 63f8d75b02d51d747b4eab26ca6b6b68
+      internalID: 1091077329
       vertices: []
       indices: 
       edges: []
@@ -234,10 +234,10 @@ TextureImporter:
       name: life_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2733f2f6837355f468c231a822f63449
-      internalID: -1520655234
+      spriteID: f36d4e05790e22b4fb1000d245d79ace
+      internalID: 438094267
       vertices: []
       indices: 
       edges: []
@@ -255,10 +255,10 @@ TextureImporter:
       name: life_7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 224
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e9cfdfee7b3417429533ae34ef8b13b
-      internalID: 1204519749
+      spriteID: 39f895311b46a93489d1020fe0c30f90
+      internalID: 740785424
       vertices: []
       indices: 
       edges: []
@@ -276,10 +276,10 @@ TextureImporter:
       name: life_8
       rect:
         serializedVersion: 2
-        x: 512
+        x: 256
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd57b0d074f696b4c834c3e14e9d7bf9
-      internalID: 2010257286
+      spriteID: 0b6f025730d491e4e9d2de785c2e11d6
+      internalID: 1369659888
       vertices: []
       indices: 
       edges: []
@@ -297,10 +297,10 @@ TextureImporter:
       name: life_9
       rect:
         serializedVersion: 2
-        x: 576
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7589498042d1cbc41aedb300fb947435
-      internalID: 810094725
+      spriteID: 5a4f6a84651259947b79e8ab630c9e60
+      internalID: 1041365626
       vertices: []
       indices: 
       edges: []
@@ -318,10 +318,10 @@ TextureImporter:
       name: life_10
       rect:
         serializedVersion: 2
-        x: 640
+        x: 320
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7759a7ab2ed7914d8c1e3b6e074f2da
-      internalID: 279750554
+      spriteID: f17967bfe42cc8543a787e8728e8aad5
+      internalID: -377186736
       vertices: []
       indices: 
       edges: []
@@ -346,17 +346,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      life_6: -1520655234
-      life_4: -992189950
-      life_9: 810094725
-      life_3: 267218577
-      life_7: 1204519749
-      life_8: 2010257286
-      life_10: 279750554
-      life_2: -357384366
-      life_1: -1674444720
-      life_0: -602303104
-      life_5: -558651250
+      life_6: 438094267
+      life_4: 861151285
+      life_9: 1041365626
+      life_3: 828510155
+      life_7: 740785424
+      life_8: 1369659888
+      life_10: -377186736
+      life_2: -1020904781
+      life_1: -159950525
+      life_0: 2002637896
+      life_5: 1091077329
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
