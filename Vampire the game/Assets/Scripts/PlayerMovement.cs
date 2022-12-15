@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
@@ -12,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask WhatIsGround;
     public float groundCheckRadius;
     public Transform groundCheck;
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,14 +28,29 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        animator.SetBool("Jump", !IsGrounded);
+        
+        if (Input.GetAxis("Horizontal")> 0f)
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
+        if (Input.GetAxis("Horizontal") < 0f)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+            
+        }
 
-
-        if ((IsGrounded == true && Input.GetKeyDown(KeyCode.W)) || (IsGrounded == true && Input.GetKeyDown(KeyCode.Space)))
+        if ((IsGrounded == true && Input.GetButtonDown("Jump")))
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
 
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
+        var horizontal = Input.GetAxisRaw("Horizontal") ;
+        var velocity = rb.velocity;
+        velocity.x = horizontal * moveSpeed;
+        rb.velocity = velocity;
     }
-
+   
 }
