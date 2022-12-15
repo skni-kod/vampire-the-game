@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 579119870471220750}
   - component: {fileID: 579119870471220749}
   - component: {fileID: 579119870471220751}
+  - component: {fileID: 1986312543353952104}
   m_Layer: 0
   m_Name: Potion Health
   m_TagString: Potion Health
@@ -111,3 +112,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3437047, y: 0.49988365}
   m_EdgeRadius: 0
+--- !u!95 &1986312543353952104
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579119870471220787}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52f99718be7f7f44ca4f4aa31012bcd8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
