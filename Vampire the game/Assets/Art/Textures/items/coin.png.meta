@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Vampire the game/Assets/Art/Textures/items/coin.png.meta
 guid: 8c31eee18011dd646b87e31c13c24fb1
-========
-guid: 8c61fd3ffe947894a896550f48974600
->>>>>>>> animation:Vampire the game/Assets/Art/Textures/player/animations/player_jump.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

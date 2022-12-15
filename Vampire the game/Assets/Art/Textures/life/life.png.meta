@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: a7f9b9141584f054887d112e982fb234
-=======
-guid: 70b51d513ca0a0245b034472a5a1bb42
->>>>>>> animation
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,13 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<< HEAD
         width: 32
         height: 32
-=======
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,13 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 72f4996eae1314340b085dce1439a5ec
       internalID: 2002637896
-=======
-      spriteID: f825a8559d6a25e489382897360f1291
-      internalID: -407607519
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -143,17 +129,10 @@ TextureImporter:
       name: life_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 32
         y: 0
         width: 32
         height: 32
-=======
-        x: 128
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,13 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: c7e8f4c742d59ce45b0e9023a11a65c7
       internalID: -159950525
-=======
-      spriteID: 68630174583927a4c9b0b510868b1eb6
-      internalID: 1526971487
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -176,17 +150,10 @@ TextureImporter:
       name: life_2
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 64
         y: 0
         width: 32
         height: 32
-=======
-        x: 256
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,13 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: a15ed61f4f261ca419bee9db0c09e57a
       internalID: -1020904781
-=======
-      spriteID: fe45c33eb63f46b479c61f2cddacd8d3
-      internalID: -683831826
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -209,17 +171,10 @@ TextureImporter:
       name: life_3
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 96
         y: 0
         width: 32
         height: 32
-=======
-        x: 384
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,13 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: a49ac6c20b736a848bff6da910c09c4d
       internalID: 828510155
-=======
-      spriteID: 0fe9be7894eedb4469ddaf9241dad64e
-      internalID: 2002740227
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -242,17 +192,10 @@ TextureImporter:
       name: life_4
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 128
         y: 0
         width: 32
         height: 32
-=======
-        x: 512
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,13 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: e42601dddce760f42901bcffcba8ab5f
       internalID: 861151285
-=======
-      spriteID: ac65b3226a75259499003643eda2feb3
-      internalID: 1665887223
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -275,17 +213,10 @@ TextureImporter:
       name: life_5
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 160
         y: 0
         width: 32
         height: 32
-=======
-        x: 640
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,13 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 63f8d75b02d51d747b4eab26ca6b6b68
       internalID: 1091077329
-=======
-      spriteID: 9610dbf0443c988418578fd98a80e542
-      internalID: -1661424892
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -308,17 +234,10 @@ TextureImporter:
       name: life_6
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 192
         y: 0
         width: 32
         height: 32
-=======
-        x: 768
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,13 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: f36d4e05790e22b4fb1000d245d79ace
       internalID: 438094267
-=======
-      spriteID: 10805edb8c3fdaf478efcdaaf0dc7b6d
-      internalID: 745667521
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -341,17 +255,10 @@ TextureImporter:
       name: life_7
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 224
         y: 0
         width: 32
         height: 32
-=======
-        x: 896
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,13 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 39f895311b46a93489d1020fe0c30f90
       internalID: 740785424
-=======
-      spriteID: 5b0884df747afce4483c2245b7aef5ee
-      internalID: 947433673
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -374,17 +276,10 @@ TextureImporter:
       name: life_8
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 256
         y: 0
         width: 32
         height: 32
-=======
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,13 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 0b6f025730d491e4e9d2de785c2e11d6
       internalID: 1369659888
-=======
-      spriteID: 6e059f329572f51409f5b477f70bb466
-      internalID: -591891168
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -407,17 +297,10 @@ TextureImporter:
       name: life_9
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 288
         y: 0
         width: 32
         height: 32
-=======
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,13 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 5a4f6a84651259947b79e8ab630c9e60
       internalID: 1041365626
-=======
-      spriteID: 9794b4a0043b1ad46b66a40131940f33
-      internalID: 12676920
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -440,17 +318,10 @@ TextureImporter:
       name: life_10
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 320
         y: 0
         width: 32
         height: 32
-=======
-        x: 1280
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,13 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: f17967bfe42cc8543a787e8728e8aad5
       internalID: -377186736
-=======
-      spriteID: 40087f5cfaf8ea74b8f5e5647ad3d43d
-      internalID: -784758941
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -480,7 +346,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD
       life_6: 438094267
       life_4: 861151285
       life_9: 1041365626
@@ -492,19 +357,6 @@ TextureImporter:
       life_1: -159950525
       life_0: 2002637896
       life_5: 1091077329
-=======
-      life_6: 745667521
-      life_4: 1665887223
-      life_9: 12676920
-      life_3: 2002740227
-      life_7: 947433673
-      life_8: -591891168
-      life_10: -784758941
-      life_2: -683831826
-      life_1: 1526971487
-      life_0: -407607519
-      life_5: -1661424892
->>>>>>> animation
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

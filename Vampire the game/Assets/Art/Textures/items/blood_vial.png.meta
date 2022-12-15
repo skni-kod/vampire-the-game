@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0836967fa0dac2a4ca0b1584c85ed831
+guid: 22af03cdc591dd949a44cbd16ab85ef0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,8 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4944556ab1008fc42a6eb7828ef5a8f3
-      internalID: -1650124011
+      spriteID: cbf35acb815245045ba6a6737db5ad06
+      internalID: -661097942
       vertices: []
       indices: 
       edges: []
@@ -129,10 +129,10 @@ TextureImporter:
       name: blood_vial_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce16c54c30b27146959d7d00a4f8e37
-      internalID: 1089876344
+      spriteID: 6d8742e813772a44ab516121d3c7a3e6
+      internalID: -1825123848
       vertices: []
       indices: 
       edges: []
@@ -150,10 +150,10 @@ TextureImporter:
       name: blood_vial_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cf2930b0d10f64fa15f7fb97172708
-      internalID: -415192778
+      spriteID: 5370c4482fcc3a3479af2ef580d1384e
+      internalID: -1504871368
       vertices: []
       indices: 
       edges: []
@@ -171,10 +171,10 @@ TextureImporter:
       name: blood_vial_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abdba959ebadbb14eb9df4bc69351b95
-      internalID: 1031431148
+      spriteID: 6448367bfafc94d46b88f6a347c56268
+      internalID: 618719787
       vertices: []
       indices: 
       edges: []
@@ -192,10 +192,10 @@ TextureImporter:
       name: blood_vial_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46c4d6278c60264ea7b887f27fbaba4
-      internalID: -16775008
+      spriteID: 3ffee687e30be07499e0a160b81f3940
+      internalID: 1143876567
       vertices: []
       indices: 
       edges: []
@@ -213,10 +213,10 @@ TextureImporter:
       name: blood_vial_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 034a752a498e3e94188f389ed9479d18
-      internalID: -47091956
+      spriteID: 3bae946275e5a984584b87f78e909016
+      internalID: -1595251479
       vertices: []
       indices: 
       edges: []
@@ -234,10 +234,10 @@ TextureImporter:
       name: blood_vial_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c1f6f9dd3e678140b9431fbfcd63faa
-      internalID: 931922740
+      spriteID: 8017f032a946dd64c9bfe53c6d74ec01
+      internalID: 533269768
       vertices: []
       indices: 
       edges: []
@@ -255,10 +255,10 @@ TextureImporter:
       name: blood_vial_7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 224
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0285008e78237774e8eadc2d99b57940
-      internalID: -2084636824
+      spriteID: 089af84b94439ab4faf0f6eaadf29aa0
+      internalID: -167815544
       vertices: []
       indices: 
       edges: []
@@ -276,10 +276,10 @@ TextureImporter:
       name: blood_vial_8
       rect:
         serializedVersion: 2
-        x: 512
+        x: 256
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efad4e4e90e569e4fb7fd7d4334c86d5
-      internalID: 1100520287
+      spriteID: 3665cbe142131f3429413b6ba3f74daf
+      internalID: -310479125
       vertices: []
       indices: 
       edges: []
@@ -304,15 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blood_vial_5: -47091956
-      blood_vial_4: -16775008
-      blood_vial_7: -2084636824
-      blood_vial_8: 1100520287
-      blood_vial_6: 931922740
-      blood_vial_3: 1031431148
-      blood_vial_1: 1089876344
-      blood_vial_2: -415192778
-      blood_vial_0: -1650124011
+      blood_vial_5: -1595251479
+      blood_vial_4: 1143876567
+      blood_vial_7: -167815544
+      blood_vial_8: -310479125
+      blood_vial_6: 533269768
+      blood_vial_3: 618719787
+      blood_vial_1: -1825123848
+      blood_vial_2: -1504871368
+      blood_vial_0: -661097942
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

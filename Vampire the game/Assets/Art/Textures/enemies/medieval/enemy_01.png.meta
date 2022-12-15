@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d90853f502ca2a84f948cb56015ef45b
-=======
-guid: 59d03fa04f4ac564e9b80c485e8ec345
->>>>>>> animation
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -51,11 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 32
-=======
-  spritePixelsToUnits: 128
->>>>>>> animation
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,15 +109,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD
         y: 192
         width: 64
         height: 64
-=======
-        y: 384
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,13 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: fa59f629cdc9a5a49922349f9e41c4e1
       internalID: -556814005
-=======
-      spriteID: 8a0e1081149bd1747a82d7f74c99f0a6
-      internalID: -1991079378
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -148,17 +129,10 @@ TextureImporter:
       name: enemy_01_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 64
         y: 192
         width: 64
         height: 64
-=======
-        x: 128
-        y: 384
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,13 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 7fdabddbf0231c747a8a1f0e36722cfa
       internalID: 1378915476
-=======
-      spriteID: bd45147bfcd0de44390f6234d999a3e2
-      internalID: 1397221562
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -182,15 +151,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD
         y: 128
         width: 64
         height: 64
-=======
-        y: 256
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,13 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 7a7355507ae426b468277726cddfe3de
       internalID: 2073403902
-=======
-      spriteID: 1fee4a2cdc420d14494771cb1d03dd5b
-      internalID: -1579320571
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -213,17 +171,10 @@ TextureImporter:
       name: enemy_01_3
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 64
         y: 128
         width: 64
         height: 64
-=======
-        x: 128
-        y: 256
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,13 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: a25dc0d09b5c9ea409ca7e180c4a1a9e
       internalID: 589523139
-=======
-      spriteID: b8cb36950a0145b47a23af0c54dbe374
-      internalID: -304017615
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -246,17 +192,10 @@ TextureImporter:
       name: enemy_01_4
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 128
         y: 128
         width: 64
         height: 64
-=======
-        x: 256
-        y: 256
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,13 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 626845488cb2e6c4397f72bbc4597c6a
       internalID: -1325585771
-=======
-      spriteID: 24df96e05553a974b85abc96301981a0
-      internalID: 915297067
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -279,17 +213,10 @@ TextureImporter:
       name: enemy_01_5
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 192
         y: 128
         width: 64
         height: 64
-=======
-        x: 384
-        y: 256
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,13 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 129fb80e66a4c834f841cbbfb2449aad
       internalID: 1554100203
-=======
-      spriteID: 2edd7f3f537947b4598f5c44f601e683
-      internalID: -481743759
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -313,15 +235,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD
         y: 64
         width: 64
         height: 64
-=======
-        y: 128
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,13 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 3082ac94abf2f494ca022878e3ff7a7f
       internalID: 1445447151
-=======
-      spriteID: 4274577ac7839824aaaf1a06e9b9580b
-      internalID: 1554627364
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -344,17 +255,10 @@ TextureImporter:
       name: enemy_01_7
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 64
         y: 64
         width: 64
         height: 64
-=======
-        x: 128
-        y: 128
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,13 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: b271103fefeeb074bb2432b6f02d8e9b
       internalID: 988920545
-=======
-      spriteID: 672680528ba390a43843dc1bde53229a
-      internalID: 1778095044
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -379,13 +278,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<< HEAD
         width: 64
         height: 64
-=======
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,13 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 5c52a90e007131842aee35b18eee0712
       internalID: -1030445941
-=======
-      spriteID: 55071092c9a561f418131500c28e4bf7
-      internalID: -85415708
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -408,17 +297,10 @@ TextureImporter:
       name: enemy_01_9
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 64
         y: 0
         width: 64
         height: 64
-=======
-        x: 128
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,13 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: b66d67d3004a7a845b98c4cbc06eddee
       internalID: 1346424850
-=======
-      spriteID: a40a4d3488b88bf48835e976960d7761
-      internalID: 778786475
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -441,17 +318,10 @@ TextureImporter:
       name: enemy_01_10
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 128
         y: 0
         width: 64
         height: 64
-=======
-        x: 256
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,13 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 80ed43e207b3a0342a9cbbeebf7694c2
       internalID: -1863949783
-=======
-      spriteID: 2547bd1ede563784ab70a2115b06f350
-      internalID: 393286808
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -474,17 +339,10 @@ TextureImporter:
       name: enemy_01_11
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 192
         y: 0
         width: 64
         height: 64
-=======
-        x: 384
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,13 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: e9c372ac4827d794f84746deb9f3bc3c
       internalID: 1455577866
-=======
-      spriteID: 7de1224f98fea0548b3e88730a71ff3b
-      internalID: 1973532282
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -507,17 +360,10 @@ TextureImporter:
       name: enemy_01_12
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 256
         y: 0
         width: 64
         height: 64
-=======
-        x: 512
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,13 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: 0918afb4e3fd8824ea57f0bb14fed73c
       internalID: 1338545561
-=======
-      spriteID: 73bdfe176ce92034c842fde40e0c18cd
-      internalID: 1686286721
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -540,17 +381,10 @@ TextureImporter:
       name: enemy_01_13
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
         x: 320
         y: 0
         width: 64
         height: 64
-=======
-        x: 640
-        y: 0
-        width: 128
-        height: 128
->>>>>>> animation
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,13 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
       spriteID: ddfa7bf2bde6199418311fddc04930d8
       internalID: 218861491
-=======
-      spriteID: e40edc499c24a0e448ab89c2ce79df6d
-      internalID: -1370464857
->>>>>>> animation
       vertices: []
       indices: 
       edges: []
@@ -580,7 +409,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD
       enemy_01_7: 988920545
       enemy_01_5: 1554100203
       enemy_01_6: 1445447151
@@ -595,22 +423,6 @@ TextureImporter:
       enemy_01_11: 1455577866
       enemy_01_1: 1378915476
       enemy_01_0: -556814005
-=======
-      enemy_01_7: 1778095044
-      enemy_01_5: -481743759
-      enemy_01_6: 1554627364
-      enemy_01_13: -1370464857
-      enemy_01_4: 915297067
-      enemy_01_2: -1579320571
-      enemy_01_8: -85415708
-      enemy_01_10: 393286808
-      enemy_01_9: 778786475
-      enemy_01_12: 1686286721
-      enemy_01_3: -304017615
-      enemy_01_11: 1973532282
-      enemy_01_1: 1397221562
-      enemy_01_0: -1991079378
->>>>>>> animation
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
