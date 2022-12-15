@@ -12,12 +12,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        healthBar.setHealth(currentHealth);
     }
 
     public void takeDamage(int damage)
