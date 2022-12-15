@@ -7,7 +7,7 @@ public class camerafollow : MonoBehaviour
     public float FollowSpeed = 2f;
     public float yOffset = 1f;
     public Transform target;
-    public pixelCamera cameraHelper;
+
     private float moveSpeed = 0f;
 
     Vector3 randomPos = Vector3.zero;
@@ -26,7 +26,6 @@ public class camerafollow : MonoBehaviour
             randomPos = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), transform.position.z);
         }
 
-        Vector3 moveDir = (randomPos - cameraHelper.GetCameraPos()).normalized;
-        cameraHelper.Move(moveDir * moveSpeed * Time.deltaTime);
+       
     }
 }
