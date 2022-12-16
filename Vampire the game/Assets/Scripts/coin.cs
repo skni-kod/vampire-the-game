@@ -7,7 +7,7 @@ public class coin : MonoBehaviour
 {
     public int points = 0;
     public TextMeshProUGUI pointsText;
-    
+    public Animator animator;
 
     void Update()
     {
@@ -15,17 +15,27 @@ public class coin : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collision)
-        
+
     {
-        if(collision.tag=="Coin")
+        if (collision.tag == "Coin")
         {
             points++;
-            
+
 
             Destroy(collision.gameObject);
 
         }
+        if (collision.tag == "Door")
+        {
+            animator.SetTrigger("door_open");
+        }
     }
-
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Door")
+        {
+            animator.SetTrigger("door_close");
+        }
+    }
 }
 
