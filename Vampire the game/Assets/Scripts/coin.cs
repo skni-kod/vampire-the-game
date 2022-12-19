@@ -26,18 +26,9 @@ public class coin : MonoBehaviour, ISaveable
             Destroy(collision.gameObject);
 
         }
-        if (collision.tag == "Door")
-        {
-            animator.SetTrigger("door_open");
-        }
+        
     }
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.tag == "Door")
-        {
-            animator.SetTrigger("door_close");
-        }
-    }
+    
     public object SaveState()
     {
         return new SaveData()
