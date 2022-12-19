@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
-public class coin : MonoBehaviour
+public class coin : MonoBehaviour, ISaveable
 {
     public int points = 0;
     public TextMeshProUGUI pointsText;
@@ -36,6 +37,23 @@ public class coin : MonoBehaviour
         {
             animator.SetTrigger("door_close");
         }
+    }
+    public object SaveState()
+    {
+        return new SaveData()
+        {
+            points = this.points
+        };
+    }
+    public void LoadState(object state)
+    {
+        var saveData = (SaveData)state;
+        points = saveData.points;
+    }
+    [Serializable]
+    private struct SaveData
+    {
+        public int points;
     }
 }
 
