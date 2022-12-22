@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 
-public class PlayerMovement : MonoBehaviour, ISaveable
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpHeight;
@@ -53,24 +52,5 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         velocity.x = horizontal * moveSpeed;
         rb.velocity = velocity;
     }
-    public object SaveState() //funkcja do zapisania pozycji postaci
-    {
-        return new SaveData()
-        {
-            x = this.transform.position.x,
-            y = this.transform.position.y
-        };
-    }
-    public void LoadState(object state) //funkcja do wczytania pozycji postaci z zapisu
-    {
-        var saveData = (SaveData)state;
-        Vector2 poz = new Vector2(saveData.x, saveData.y);
-        rb.position = poz;
-    }
-    [Serializable]
-    private struct SaveData //Struktura pozycji postaci do zapisu
-    {
-        public float x;
-        public float y;
-    }
+   
 }
