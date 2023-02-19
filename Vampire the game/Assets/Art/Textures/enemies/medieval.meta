@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Vampire the game/Assets/Art/Textures/enemies/medieval.meta
 guid: 06ec93ea990fde945b2d8340dbef5f3b
+========
+guid: 944becc1fe3833b4d8f283484e40e924
+>>>>>>>> blood-vial:Vampire the game/Assets/Scripts/Player.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
