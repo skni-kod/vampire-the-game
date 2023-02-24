@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - Coin
+  - Shop
   layers:
   - Default
   - TransparentFX

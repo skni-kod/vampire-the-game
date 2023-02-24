@@ -3,28 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class coin : MonoBehaviour
+public class coins : MonoBehaviour
 {
-    public int points = 0;
-    public TextMeshProUGUI pointsText;
-    
+    public int coin = 0;
+    public TextMeshProUGUI coinsText;
+   
+
 
     void Update()
     {
-        pointsText.text = points.ToString();
+        coinsText.text = coin.ToString();
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
-        
+
     {
-        if(collision.tag=="Coin")
+        if (collision.tag == "Coin")
         {
-            points++;
-            
+            coin++;
+
 
             Destroy(collision.gameObject);
 
         }
+
+      
     }
 
 }
