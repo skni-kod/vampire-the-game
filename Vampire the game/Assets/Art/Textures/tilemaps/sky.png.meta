@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e37d06a958efaa45a62cac3256ceeea
+guid: d70a417017f601c49a35896613976983
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,6 +121,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1479e6e3f2325404ab20aaf00679e3b8
+      internalID: -1214253408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e16c709114d9448b8c047dc0629f60
+      internalID: 1753923299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948b5880c2912ec4891bf579f4d0a7d1
+      internalID: -644716938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c23c14dc7241e40a4e2b57e3fee88b
+      internalID: -1008141672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -131,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ac5188f7c415e449c07e7e0b39f6b5
-      internalID: -1236149636
+      spriteID: a288d2612b488b74c90d9e1eb5d5ce39
+      internalID: -2147120889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sky_1
+      name: sky_5
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e2cf1e9e48759409fde90a75505773
-      internalID: 1907625593
+      spriteID: 6eb0c132b7c4e7c4c84a4b482f092967
+      internalID: -251933877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sky_2
+      name: sky_6
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +257,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba874d468a8702b4a95d9ea457ea0e5c
-      internalID: 1246329912
+      spriteID: 05b867ab879454a4481ff3bb68d274fc
+      internalID: -414346278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sky_3
+      name: sky_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710fa8a7d2b38f3468d9f07b0d8c71fb
+      internalID: 1549187448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_8
       rect:
         serializedVersion: 2
         x: 0
@@ -194,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fab9178795869194d8aa4cf20bba2864
-      internalID: 249972291
+      spriteID: 77521a005bf8d2345ae07706af3b2b7d
+      internalID: 975128797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sky_4
+      name: sky_9
       rect:
         serializedVersion: 2
         x: 32
@@ -215,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65910dbac737573448da6c33383e57b0
-      internalID: 633399205
+      spriteID: 48433db0d8b6d9946a81662fc5447fa3
+      internalID: -1628154565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sky_5
+      name: sky_10
       rect:
         serializedVersion: 2
         x: 64
@@ -236,8 +341,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35ad1403d0feab0448d97058057fbdca
-      internalID: 1898669614
+      spriteID: 5accd842198c6bb4eb5ea0d75381395a
+      internalID: 920255107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7dd278de9003f4dbd3952d2ecde6e8
+      internalID: 1211562427
       vertices: []
       indices: 
       edges: []
@@ -253,12 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sky_1: 1907625593
-      sky_5: 1898669614
-      sky_3: 249972291
-      sky_0: -1236149636
-      sky_2: 1246329912
-      sky_4: 633399205
+      sky_6: -414346278
+      sky_1: 1753923299
+      sky_5: -251933877
+      sky_3: -1008141672
+      sky_11: 1211562427
+      sky_0: -1214253408
+      sky_8: 975128797
+      sky_2: -644716938
+      sky_7: 1549187448
+      sky_9: -1628154565
+      sky_4: -2147120889
+      sky_10: 920255107
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
