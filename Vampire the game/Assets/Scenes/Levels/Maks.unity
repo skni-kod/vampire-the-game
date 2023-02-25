@@ -20754,7 +20754,7 @@ GameObject:
   - component: {fileID: 907441529}
   - component: {fileID: 907441528}
   m_Layer: 5
-  m_Name: Coins
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21124,7 +21124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
-  coinsText: {fileID: 907441528}
+  coinText: {fileID: 907441528}
 --- !u!4 &1132229355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8648563626213572341, guid: 0a184ba26b480274884400833ed9c298, type: 3}
