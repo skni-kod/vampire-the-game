@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpHeight: 17
+  _center: {fileID: 0}
   IsGrounded: 0
   WhatIsGround:
     serializedVersion: 2
@@ -373,4 +374,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
-  pointsText: {fileID: 0}
+  pointsText: {fileID: 3273307507967298410, guid: 2faa647ade68ed445aea1b18b7ad642b, type: 3}
