@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Vampire the game/Assets/Art/Textures/environment/Medieval/Chest/Chest.png.meta
 guid: f8cc60f381e388248b942a9d8221f101
-========
-<<<<<<<< HEAD:Vampire the game/Assets/Art/Textures/items/garlic.png.meta
-guid: cf1d0469233e07244a757259872a3ca5
-========
-guid: 25ebe5c36ac1bd24987b981f2556746c
->>>>>>>> animation:Vampire the game/Assets/Art/Textures/Items/Item/kaltka0000.png.meta
->>>>>>>> blood-vial:Vampire the game/Assets/Art/Textures/items/Item/kaltka0000.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

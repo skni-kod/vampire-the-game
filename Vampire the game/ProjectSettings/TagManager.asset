@@ -6,7 +6,8 @@ TagManager:
   tags:
   - ground
   - Coin
-  - Door
+  - hidden_room
+  - sky
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background2
+    uniqueID: 105207743
+    locked: 0
+  - name: Background
+    uniqueID: 396539521
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 453598829
     locked: 0
