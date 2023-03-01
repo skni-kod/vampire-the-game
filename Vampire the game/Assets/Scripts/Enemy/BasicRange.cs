@@ -42,7 +42,7 @@ public class BasicRange : MonoBehaviour
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
-                anim.SetTrigger("rangedAttack");
+                anim.SetTrigger("xbowAttack");
             }
         }
 

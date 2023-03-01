@@ -60,11 +60,16 @@ public class EnemyPatrol : MonoBehaviour
     private void DirectionChange()
     {
         anim.SetBool("moving", false);
-        movingLeft = !movingLeft;
+
+        idleTimer += Time.deltaTime;
+
+        if(idleTimer > idleDuration)
+            movingLeft = !movingLeft;
     }
 
     private void MoveInDirection(int _direction)
     {
+        idleTimer = 0;
         anim.SetBool("moving", true);
         //Face direction
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction, initScale.y, initScale.z);
