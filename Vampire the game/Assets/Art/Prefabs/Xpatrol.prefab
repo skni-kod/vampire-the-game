@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 8
+  damage: 10
   firepoint: {fileID: 2110777792163611274}
   bolts:
   - {fileID: 2110777792330213167}
@@ -489,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &3311486202493974072
@@ -691,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132513993688610
@@ -840,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132514272328099
@@ -989,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132514941423715
@@ -1138,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132515070020780
@@ -1287,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132515385778924
@@ -1436,7 +1437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &6935132515743881627
@@ -1585,7 +1586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fde19bd9544b64297caf35154c3563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 10
   speed: 8
   resetTime: 5
 --- !u!1 &8692952827698838284

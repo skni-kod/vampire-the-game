@@ -7,7 +7,7 @@ public class BasicMelee : MonoBehaviour
     [Header ("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
-    //[SerializeField] private int damage;
+    [SerializeField] private int damage;
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
@@ -20,6 +20,7 @@ public class BasicMelee : MonoBehaviour
 
     private Animator anim;
     private EnemyPatrol enemyPatrol;
+    private PlayerHealth playerHealth;
 
     private void Awake()
     {
@@ -51,6 +52,9 @@ public class BasicMelee : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, playerLayer);
 
+        if (hit.collider != null)
+            playerHealth = hit.transform.GetComponent<PlayerHealth>();
+
         return hit.collider != null;
     }
 
@@ -63,9 +67,9 @@ public class BasicMelee : MonoBehaviour
 
     private void DamagePlayer()
     {
-        //if (PlayerInSight())
-        //{
-            //Damage player health
-        //}
+        if (PlayerInSight())
+        {
+            playerHealth.takeDamage(damage);
+        }
     }
 }

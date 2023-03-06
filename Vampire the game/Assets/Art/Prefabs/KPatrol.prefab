@@ -122,6 +122,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5739164356502191292}
     m_Modifications:
+    - target: {fileID: 3507827153934221082, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
+      propertyPath: range
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3507827153934221082, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3507827153934221082, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3507827153934221085, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
       propertyPath: m_RootOrder
       value: 2
