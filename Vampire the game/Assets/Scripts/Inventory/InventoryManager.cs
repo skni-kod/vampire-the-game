@@ -31,16 +31,16 @@ public class InventoryManager : MonoBehaviour
 
     private void UpdateSlots()
     {
-        for(int i = 0; i < ItemsDataBase.Instance.playerItems.Count; i++)
+        for(int i = 0; i < inventorySlots; i++)
         {
-            if(i < inventorySlots)
+            if(i < ItemsDataBase.Instance.playerItems.Count)
             {
                 inventoryContent.transform.GetChild(i).Find("Icon").gameObject.SetActive(true);
                 inventoryContent.transform.GetChild(i).Find("Icon").GetComponent<Image>().sprite = ItemsDataBase.Instance.playerItems[i].Icon;
             }
             else
             {
-                inventoryContent.transform.GetChild(i).Find("Icon").gameObject.SetActive(true);
+                inventoryContent.transform.GetChild(i).Find("Icon").gameObject.SetActive(false);
                 inventoryContent.transform.GetChild(i).Find("Icon").GetComponent<Image>().sprite = null;
             }
             

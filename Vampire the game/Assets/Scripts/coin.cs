@@ -5,7 +5,7 @@ using TMPro;
 
 public class coin : MonoBehaviour
 {
-    public int points = 0;
+    public static int points = 0;
     public TextMeshProUGUI pointsText;
     
 
@@ -26,6 +26,5 @@ public class coin : MonoBehaviour
 
         }
     }
-
 }
 
