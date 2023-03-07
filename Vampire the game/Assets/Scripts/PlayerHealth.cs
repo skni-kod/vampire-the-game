@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [Header ("Health")]
     [SerializeField] private int maxHp;
+
+    /*[Header("iFrames")]
+    [SerializeField] private float duration;
+    [SerializeField] private int numberOfFlashes;*/
+
     private int currentHp;
+    private Animator anim;
     // Start is called before the first frame update
     void Awake()
     {
         maxHp = 100;
         currentHp = maxHp;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,8 +28,11 @@ public class PlayerHealth : MonoBehaviour
     public void takeDamage(int damage)
     {
         currentHp -= damage;
+        anim.SetTrigger("hurt");
+
         if(currentHp <= 0)
         {
+            //anim.SetTrigger("death");
             GameObject.Destroy(gameObject);
         }
     }

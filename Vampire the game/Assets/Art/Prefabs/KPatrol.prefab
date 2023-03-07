@@ -81,8 +81,8 @@ MonoBehaviour:
   leftEdge: {fileID: 5739164357672870724}
   rightEdge: {fileID: 5739164355882783379}
   enemy: {fileID: 5739164357907441883}
-  speed: 2
-  idleDuration: 3
+  speed: 6
+  idleDuration: 0.5
   anim: {fileID: 5739164357907441885}
 --- !u!1 &5739164357672870725
 GameObject:
@@ -184,6 +184,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
+--- !u!1 &5739164357907441881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3507827153934221087, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
+  m_PrefabInstance: {fileID: 9154645574070310854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2595069668786102827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5739164357907441881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cbc98e5d63bf84fae2c0081a8e7c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 20
 --- !u!4 &5739164357907441883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3507827153934221085, guid: 560b1c66a4c615e479f2c4112585f8bc, type: 3}
