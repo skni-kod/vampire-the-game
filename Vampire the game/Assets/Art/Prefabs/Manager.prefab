@@ -55,9 +55,4 @@ MonoBehaviour:
     ID: 1
     Type: 0
     Icon: {fileID: -1758066454, guid: aedb4ffd4e1e6cb4699e6356dbdec06f, type: 3}
-  playerItems:
-  - Name: Chest key
-    Description: A key that allows you to open the chest
-    ID: 1
-    Type: 0
-    Icon: {fileID: -350839721, guid: aedb4ffd4e1e6cb4699e6356dbdec06f, type: 3}
+  playerItems: []
