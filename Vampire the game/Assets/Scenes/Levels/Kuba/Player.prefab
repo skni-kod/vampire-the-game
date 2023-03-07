@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpHeight: 17
+  _center: {fileID: 0}
   IsGrounded: 0
   WhatIsGround:
     serializedVersion: 2
