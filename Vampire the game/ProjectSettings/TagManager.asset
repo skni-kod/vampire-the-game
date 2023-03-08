@@ -15,7 +15,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - PostProcessing
   - 
   - 
   - 
@@ -42,10 +42,10 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background2
+  - name: Background-back
     uniqueID: 105207743
     locked: 0
-  - name: Background
+  - name: Background-top
     uniqueID: 396539521
     locked: 0
   - name: Default
