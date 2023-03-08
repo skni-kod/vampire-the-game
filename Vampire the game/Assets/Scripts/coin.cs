@@ -1,30 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class coin : MonoBehaviour
 {
-    public Text coinsText;
+    public static int points = 0;
+    public TextMeshProUGUI pointsText;
+    
+
+    void Update()
+    {
+        pointsText.text = points.ToString();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
-
+        
     {
-        if (collision.tag == "Coin")
+        if(collision.tag=="Coin")
         {
-
-            ShopManager.instance.coins++ ;
-
+            points++;
+            
 
             Destroy(collision.gameObject);
 
         }
-
-      
-    }
-    private void OnGUI()
-    {
-        coinsText.text =  ShopManager.instance.coins.ToString();
     }
 }
 

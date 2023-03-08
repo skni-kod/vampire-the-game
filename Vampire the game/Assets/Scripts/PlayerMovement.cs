@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header ("Movement Parameters")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpHeight;
+
+    [Header("Knockback")]
+    [SerializeField] private Transform _center;
 
     private Rigidbody2D rb;
     public bool IsGrounded;
