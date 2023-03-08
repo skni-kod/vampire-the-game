@@ -7,10 +7,6 @@ public class PlayerHealth : MonoBehaviour
     [Header ("Health")]
     [SerializeField] private int maxHp;
 
-    /*[Header("iFrames")]
-    [SerializeField] private float duration;
-    [SerializeField] private int numberOfFlashes;*/
-
     private int currentHp;
     private Animator anim;
     // Start is called before the first frame update
@@ -32,8 +28,8 @@ public class PlayerHealth : MonoBehaviour
 
         if(currentHp <= 0)
         {
-            //anim.SetTrigger("death");
-            GameObject.Destroy(gameObject);
+            anim.SetTrigger("death");
+            GetComponent<PlayerMovement>().enabled = false;
         }
     }
 

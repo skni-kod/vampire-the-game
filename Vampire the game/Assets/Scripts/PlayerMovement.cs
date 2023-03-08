@@ -56,5 +56,10 @@ public class PlayerMovement : MonoBehaviour
         velocity.x = horizontal * moveSpeed;
         rb.velocity = velocity;
     }
+
+    public bool canAttack()
+    {
+        return IsGrounded && (Input.GetAxis("Horizontal") == 0);
+    }
    
 }
