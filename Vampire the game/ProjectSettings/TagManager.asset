@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - hidden_room
   - sky
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - EnemyBounds
   - Missle
+  - Item
   - 
   - 
   - 
