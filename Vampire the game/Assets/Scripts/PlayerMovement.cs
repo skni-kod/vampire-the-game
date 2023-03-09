@@ -2,52 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
-    private bool isFacingRight = true;
+    [Header ("Movement Parameters")]
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpHeight;
 
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
+    [Header("Knockback")]
+    [SerializeField] private Transform _center;
 
+    private Rigidbody2D rb;
+    public bool IsGrounded;
+    public LayerMask WhatIsGround;
+    public float groundCheckRadius;
+    public Transform groundCheck;
+    public Animator animator;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void FixedUpdate()
+    {
+        IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, WhatIsGround);
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+       
+        animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
+        animator.SetBool("Jump", !IsGrounded);
+        
+        if (Input.GetAxis("Horizontal")> 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
+        if (Input.GetAxis("Horizontal") < 0f)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+            
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        if ((IsGrounded == true && Input.GetButtonDown("Jump")))
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            rb.velocity = new Vector2(0, jumpHeight);
         }
 
-        Flip();
+        var horizontal = Input.GetAxisRaw("Horizontal") ;
+        var velocity = rb.velocity;
+        velocity.x = horizontal * moveSpeed;
+        rb.velocity = velocity;
     }
 
-    private void FixedUpdate()
+    public bool canAttack()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        return IsGrounded && (Input.GetAxis("Horizontal") == 0);
     }
-
-    private bool IsGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
-
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
+   
 }
