@@ -6,7 +6,7 @@ public class ShopManager : MonoBehaviour
     public static ShopManager instance;
     public int coins;
     public Text coinText;
-    public Upgrade[] upgrades;
+    public Upgraded[] upgrades;
     
     public GameObject ShopUI;
     public Transform ShopContent;
@@ -30,46 +30,42 @@ public class ShopManager : MonoBehaviour
     }
     private void Start()
     {
-        foreach (Upgrade upgrade in upgrades )
+        foreach (Upgraded upgraded in upgrades )
         {
             GameObject item = Instantiate(itemPrefab, ShopContent);
 
-            upgrade.itemRef = item;
+            upgraded.itemRef = item;
 
             foreach (Transform child in  item.transform)
             {
-                if(child.gameObject.name == "Quantity")
+               
+                if (child.gameObject.name == "Cost")
                 {
-                    child.gameObject.GetComponent<Text>().text = upgrade.ToString();
-                   
-                }
-                else if (child.gameObject.name == "Cost")
-                {
-                    child.gameObject.GetComponent<Text>().text = "$" + upgrade.cost.ToString();
+                    child.gameObject.GetComponent<Text>().text = upgraded.cost.ToString();
 
                 }
                 else if (child.gameObject.name == "Name")
                 {
-                    child.gameObject.GetComponent<Text>().text = "$" + upgrade.name;
+                    child.gameObject.GetComponent<Text>().text =  upgraded.name;
                 }
                 else if (child.gameObject.name == "Image")
                 {
-                    child.gameObject.GetComponent<Image>().sprite = upgrade.image;
+                    child.gameObject.GetComponent<Image>().sprite = upgraded.image;
                 }
 
             }
-            item.GetComponent<Button>().onClick.AddListener(() => { });
+            item.GetComponent<Button>().onClick.AddListener(() => { BuyUpgraded(upgraded); });
         }
        
       
     }
-    private void BuyUpgrade(Upgrade upgrade)
+    private void BuyUpgraded(Upgraded upgraded)
     {
-        if (coins >= upgrade.cost)
+        if (coins >= upgraded.cost)
         {
-            coins -= upgrade.cost;
-            upgrade.quantity++;
-            upgrade.itemRef.transform.GetChild(0).GetComponent<Text>().text = upgrade.quantity.ToString();
+            coins -= upgraded.cost;
+            
+            upgraded.itemRef.transform.GetChild(0).GetComponent<Text>().text = upgraded.ToString();
         }
     }
     public void ToggleShop()
@@ -82,7 +78,7 @@ public class ShopManager : MonoBehaviour
     }
 }
 [System.Serializable]
-public class Upgrade
+public class Upgraded
 {
     public string name;
     public int cost;
