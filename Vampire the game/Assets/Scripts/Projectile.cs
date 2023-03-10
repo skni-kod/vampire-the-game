@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private int missle_damage;
     private float direction;
     private bool hit;
 
@@ -28,11 +27,19 @@ public class Projectile : MonoBehaviour
     {
         hit = true;
         boxCollider.enabled = false;
-        anim.SetTrigger("Explode");
+        anim.SetTrigger("explode");
+
+        if (collision.tag == "Enemy")
+            collision.GetComponent<EnemyHealth>().takeDamage(missle_damage);
     }
 
     public void SetDirection(float _direction)
     {
+        direction = _direction;
+        gameObject.SetActive(true);
+        hit = false;
+        boxCollider.enabled = true;
+
         direction = _direction;
         gameObject.SetActive(true);
         hit = false;
@@ -45,7 +52,7 @@ public class Projectile : MonoBehaviour
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
 
-    private void Deactivate()
+        private void Deactivate()
     {
         gameObject.SetActive(false);
     }

@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - hidden_room
   - sky
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - EnemyBounds
   - Missle
+  - Item
   - 
   - 
   - 
@@ -42,18 +43,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background2
+  - name: Background-back
     uniqueID: 105207743
     locked: 0
-  - name: Background
+  - name: Background-top
     uniqueID: 396539521
-    locked: 0
-  - name: Items
-    uniqueID: 1449150401
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Ground
     uniqueID: 453598829
+    locked: 0
+  - name: Foreground
+    uniqueID: 721666209
     locked: 0

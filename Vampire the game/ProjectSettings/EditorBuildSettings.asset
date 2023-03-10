@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/MainMenu.unity
+    guid: 6723e8a8c9ceaa94fb7a344ef3f12182
+  - enabled: 1
+    path: Assets/Scenes/Levels/Vampire-The-Game-Tutorial.unity
+    guid: 870c78c68a900004992715ac6f6ad109
   m_configObjects: {}

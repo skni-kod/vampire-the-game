@@ -7,7 +7,7 @@ public class BasicRange : MonoBehaviour
     [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
-    //[SerializeField] private int damage;
+    [SerializeField] private int damage;
 
     [Header("Ranged Attack")]
     [SerializeField] private Transform firepoint;
@@ -21,9 +21,8 @@ public class BasicRange : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
-    //References
     private Animator anim;
-    //private Health playerHealth;
+    private PlayerHealth playerHealth;
     private EnemyPatrol enemyPatrol;
 
     private void Awake()
@@ -82,12 +81,4 @@ public class BasicRange : MonoBehaviour
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
-
-    /*private void DamagePlayer()
-    {
-        if (PlayerInSight())
-        {
-            //Damage player health
-        }
-    }*/
 }
