@@ -6,6 +6,7 @@ public class ShopManager : MonoBehaviour
     public static ShopManager instance;
     public int coins;
     public Text coinText;
+    public Text cashText;
     public Upgraded[] upgrades;
     
     public GameObject ShopUI;
@@ -41,7 +42,7 @@ public class ShopManager : MonoBehaviour
                
                 if (child.gameObject.name == "Cost")
                 {
-                    child.gameObject.GetComponent<Text>().text = upgraded.cost.ToString();
+                    child.gameObject.GetComponent<Text>().text ="$" + upgraded.cost.ToString();
 
                 }
                 else if (child.gameObject.name == "Name")
@@ -63,9 +64,19 @@ public class ShopManager : MonoBehaviour
     {
         if (coins >= upgraded.cost)
         {
-            coins -= upgraded.cost;
+            upgraded.quantity++;
+           
+            if(1 != upgraded.quantity)
+            {
+                
+            }
+            else
+            {
+                coins -= upgraded.cost;
+                upgraded.itemRef.transform.GetChild(0).GetComponent<Text>().text ="Upgraded" + upgraded.ToString();
+            }
             
-            upgraded.itemRef.transform.GetChild(0).GetComponent<Text>().text = upgraded.ToString();
+            
         }
     }
     public void ToggleShop()
@@ -75,6 +86,7 @@ public class ShopManager : MonoBehaviour
     private void OnGUI()
     {
         coinText.text = "Coins: " + coins.ToString();
+        cashText.text =  coins.ToString();
     }
 }
 [System.Serializable]

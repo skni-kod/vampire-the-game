@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class coin : MonoBehaviour
 {
     public static int points = 0;
-    public Text coinsText;
+  
 
     void OnTriggerEnter2D(Collider2D collision)
 
@@ -20,8 +20,5 @@ public class coin : MonoBehaviour
         }
         
     }
-    private void OnGUI()
-    {
-        coinsText.text = points.ToString();
-    }
+   
 }
