@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2110777790497469049}
   - component: {fileID: 2110777790497469051}
+  - component: {fileID: 2110777790497469050}
   - component: {fileID: 2110777790497469048}
   - component: {fileID: 2110777790497469053}
-  - component: {fileID: 2110777790497469050}
   - component: {fileID: 1766715946400741286}
   m_Layer: 7
   m_Name: Xbow_01
@@ -90,6 +90,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2110777790497469050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110777790497469062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664a3b2e8ffde074eac009ba59c5ddeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 2
+  range: 8
+  damage: 10
+  firepoint: {fileID: 2110777792163611274}
+  bolts:
+  - {fileID: 2110777792330213167}
+  - {fileID: 6935132513993688610}
+  - {fileID: 6935132513934887842}
+  - {fileID: 6935132515070020780}
+  - {fileID: 6935132515743881627}
+  - {fileID: 6935132514941423715}
+  - {fileID: 6935132515385778924}
+  - {fileID: 6935132514272328099}
+  colliderDistance: 0.47
+  boxCollider: {fileID: 2110777790497469048}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!61 &2110777790497469048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,36 +166,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2110777790497469050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110777790497469062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664a3b2e8ffde074eac009ba59c5ddeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackCooldown: 2
-  range: 8
-  damage: 10
-  firepoint: {fileID: 2110777792163611274}
-  bolts:
-  - {fileID: 2110777792330213167}
-  - {fileID: 6935132513993688610}
-  - {fileID: 6935132513934887842}
-  - {fileID: 6935132515070020780}
-  - {fileID: 6935132515743881627}
-  - {fileID: 6935132514941423715}
-  - {fileID: 6935132515385778924}
-  - {fileID: 6935132514272328099}
-  colliderDistance: 0.47
-  boxCollider: {fileID: 2110777790497469048}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &1766715946400741286
 MonoBehaviour:
   m_ObjectHideFlags: 0

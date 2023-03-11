@@ -18,12 +18,19 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius;
     public Transform groundCheck;
     public Animator animator;
+    private PlayerHealth playerHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
+    private void Awake()
+    {
+        playerHealth = GetComponent<PlayerHealth>();
+    }
+
     void FixedUpdate()
     {
         IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, WhatIsGround);
@@ -55,6 +62,14 @@ public class PlayerMovement : MonoBehaviour
         var velocity = rb.velocity;
         velocity.x = horizontal * moveSpeed;
         rb.velocity = velocity;
+
+        if (playerHealth.velocityUponDeath() == true)
+        {
+            velocity = new Vector2(0, 0);
+            rb.velocity = new Vector2(0, 0);
+            moveSpeed = 0;
+            horizontal = 0;
+        }
     }
 
     public bool canAttack()

@@ -7,9 +7,15 @@ public class PlayerHealth : MonoBehaviour
     [Header ("Health")]
     [SerializeField] private int maxHp;
 
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+
     private int currentHp;
     private Animator anim;
+    private bool dead;
+    //private PlayerMovement playerMovement;
     // Start is called before the first frame update
+
     void Awake()
     {
         maxHp = 100;
@@ -28,8 +34,15 @@ public class PlayerHealth : MonoBehaviour
 
         if(currentHp <= 0)
         {
+            dead = true;
+            velocityUponDeath();
             anim.SetTrigger("death");
-            GetComponent<PlayerMovement>().enabled = false;
+            //GetComponent<PlayerMovement>().moveSpeed = 0;
+            foreach (Behaviour component in components)
+            {
+                if(component != null)
+                    component.enabled = false;
+            }
         }
     }
 
@@ -49,5 +62,14 @@ public class PlayerHealth : MonoBehaviour
     public int getCurrentHp()
     {
         return currentHp;
+    }
+
+    public bool velocityUponDeath()
+    {
+        if (dead == true)
+        {
+            return true;
+        }
+        else return false;
     }
 }

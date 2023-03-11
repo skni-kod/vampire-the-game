@@ -1618,6 +1618,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  components:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 5127272656711647940}
 --- !u!114 &5127272656711647940
 MonoBehaviour:
   m_ObjectHideFlags: 0
