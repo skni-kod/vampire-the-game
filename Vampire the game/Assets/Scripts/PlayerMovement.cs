@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, ISaveable
 {
     [Header ("Movement Parameters")]
     [SerializeField] private float moveSpeed;
@@ -61,5 +61,25 @@ public class PlayerMovement : MonoBehaviour
     {
         return IsGrounded && (Input.GetAxis("Horizontal") == 0);
     }
-   
+    public object SaveState()
+    {
+        return new SaveData()
+        {
+            x = this.transform.position.x,
+            y = this.transform.position.y
+        };
+    }
+    public void LoadState(object state)
+    {
+        var saveData = (SaveData)state;
+        Vector2 poz = new Vector2(saveData.x, saveData.y);
+        rb.position = poz;
+    }
+
+    [System.Serializable]
+    private struct SaveData
+    {
+        public float x;
+        public float y;
+    }
 }

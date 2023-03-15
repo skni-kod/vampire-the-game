@@ -1447,6 +1447,7 @@ GameObject:
   - component: {fileID: 2033099212141954387}
   - component: {fileID: 5631754446272445287}
   - component: {fileID: 5127272656711647940}
+  - component: {fileID: 2407748714330871366}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1641,6 +1642,19 @@ MonoBehaviour:
   - {fileID: 5127272656105980205}
   - {fileID: 5127272655973470995}
   - {fileID: 5127272656228353310}
+--- !u!114 &2407748714330871366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127272656711647949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36349b9132b7dd44b54cad3f9dee609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 45affd51-c0e8-442b-bd9b-860b6ae67c0e
 --- !u!1 &6204995963089108738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1705,7 @@ GameObject:
   - component: {fileID: 5719475025159866650}
   - component: {fileID: 3099652150371309842}
   - component: {fileID: 8395905546553765775}
+  - component: {fileID: 2018586731698580510}
   m_Layer: 9
   m_Name: Arm
   m_TagString: Untagged
@@ -1752,6 +1767,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0492578, y: 1.9443717}
   m_EdgeRadius: 0
+--- !u!114 &2018586731698580510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7302265497213901031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36349b9132b7dd44b54cad3f9dee609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
 --- !u!1 &9004465860111400888
 GameObject:
   m_ObjectHideFlags: 0

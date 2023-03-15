@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, ISaveable
 {
     [Header ("Health")]
     [SerializeField] private int maxHp;
@@ -50,4 +50,25 @@ public class PlayerHealth : MonoBehaviour
     {
         return currentHp;
     }
+    public object SaveState()
+    {
+        return new SaveData()
+        {
+            currentHp = this.currentHp,
+            maxHp= this.maxHp
+        };
+    }
+    public void LoadState(object state)
+    {
+        var saveData = (SaveData)state;
+        currentHp = saveData.currentHp;
+        maxHp = saveData.maxHp;
+    }
+    [System.Serializable]
+    private struct SaveData
+    {
+        public int currentHp;
+        public int maxHp;
+    }
+
 }
