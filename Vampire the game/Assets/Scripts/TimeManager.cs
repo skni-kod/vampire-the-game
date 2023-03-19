@@ -4,25 +4,29 @@ using UnityEngine;
 using System;
 using TMPro;
 
-public class TimeManager : MonoBehaviour, ISaveable
+public class TimeManager : MonoBehaviour, ISaveable 
 {
     // Start is called before the first frame update
     [SerializeField]
     public TextMeshProUGUI timeText;
+    [SerializeField] private int damage;
 
-    public static int time=180;
-    public bool nightTime = true;
+    [SerializeField] public int time;
+
+    //public bool nightTime = truea;
     public static int Minute, Hour;
 
     private float minuteToRealTime = 0.5f;
     private float timer;
-
+    private PlayerHealth ph;
+    
     void Start()
     {
         Minute = time%60;
         Hour = time/60;
         timer = minuteToRealTime;
-        CheckTime();
+        ph = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        //CheckTime();
     }
 
     // Update is called once per frame
@@ -34,18 +38,26 @@ public class TimeManager : MonoBehaviour, ISaveable
             if (time>0) 
             {
                 time--;
-                if (time%60 == 0)
+                /*if (time%60 == 0)
                 {
                     CheckTime();
-                }
-                timer = minuteToRealTime;
+                }*/
+                
             }
+            if(time<=0)
+            {
+                if (ph.getCurrentHp() > 0)
+                {
+                    ph.takeDamage(damage);
+                }
+            }
+            timer = minuteToRealTime;
         }
         Minute = time % 60;
         Hour = time / 60;
         timeText.text = $"{TimeManager.Hour:00}:{TimeManager.Minute:00}";
     }
-    private void CheckTime()
+    /*private void CheckTime()
     {
         if (Hour <= 0 && Minute <=0)
         {
@@ -55,7 +67,7 @@ public class TimeManager : MonoBehaviour, ISaveable
         {
             nightTime = true;
         }
-    }
+    }*/
     public object SaveState()
     {
         return new SaveData()
