@@ -6,12 +6,17 @@ public class Chest : MonoBehaviour
 {
     private bool canOpen = false;
     private Animator animator;
-    // Start is called before the first frame update
+    int value;
+
+ 
     
-    
+  
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        value = Random.Range(10, 30);
+      
     }
 
     // Update is called once per frame
@@ -27,6 +32,7 @@ public class Chest : MonoBehaviour
                 break;
             }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +53,7 @@ public class Chest : MonoBehaviour
 
     private void GiveLoot()
     {
-        coin.points += 20;
+       ShopManager.instance.coins += value;
     }
+    
 }

@@ -40,11 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
         }
-        if (Input.GetAxis("Horizontal") < 0f)
-        {
-            transform.rotation = new Quaternion(0, 180, 0, 0);
-            
-        }
+     
 
         if ((IsGrounded == true && Input.GetButtonDown("Jump")))
         {
