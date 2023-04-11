@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header ("Movement Parameters")]
-    [SerializeField] private float moveSpeed;
+    public float moveSpeed;
     [SerializeField] private float jumpHeight;
 
     [Header("Knockback")]
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius;
     public Transform groundCheck;
     public Animator animator;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
                 horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
                 animator.SetFloat("moveSpeed", Mathf.Abs(horizontalMove));
                 animator.SetBool("Jump", !IsGrounded);

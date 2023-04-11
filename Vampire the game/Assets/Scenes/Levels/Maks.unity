@@ -207,6 +207,28 @@ MonoBehaviour:
   - {fileID: 333829326}
   - {fileID: 1110160005}
   - {fileID: 1934404839}
+--- !u!114 &139070223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5631754446272445287, guid: 0efe4b3551eda4b40a64ae1d9fafe122, type: 3}
+  m_PrefabInstance: {fileID: 950275607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139070213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e835da9b30badfb429aabda0f623a3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &139070226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 758990866507965695, guid: 0efe4b3551eda4b40a64ae1d9fafe122, type: 3}
+  m_PrefabInstance: {fileID: 950275607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139070213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8285da64b1f7bd04d8b3c13f2b574687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &210280096
 GameObject:
   m_ObjectHideFlags: 0
@@ -20269,6 +20291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5631754446272445287, guid: 0efe4b3551eda4b40a64ae1d9fafe122, type: 3}
+      propertyPath: maxHp
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5127272656711647940, guid: 0efe4b3551eda4b40a64ae1d9fafe122, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0efe4b3551eda4b40a64ae1d9fafe122, type: 3}
@@ -25362,16 +25388,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: coins
-      value: 0
+      value: 23443
       objectReference: {fileID: 0}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: ShopUI
       value: 
       objectReference: {fileID: 2052810889}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 139070223}
+    - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 139070226}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: cashText
       value: 
@@ -25393,12 +25423,24 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
+      propertyPath: upgrades.Array.data[0].name
+      value: dmg
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: upgrades.Array.data[1].cost
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
+      propertyPath: upgrades.Array.data[1].name
+      value: speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: upgrades.Array.data[2].cost
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
+      propertyPath: upgrades.Array.data[2].name
+      value: hp
       objectReference: {fileID: 0}
     - target: {fileID: 7595021714833997299, guid: 3547e32b8d0d72c46aac8dc90508eb0c, type: 3}
       propertyPath: upgrades.Array.data[3].cost

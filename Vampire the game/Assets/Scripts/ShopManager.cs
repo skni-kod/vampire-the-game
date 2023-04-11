@@ -13,6 +13,7 @@ public class ShopManager : MonoBehaviour
     public Transform ShopContent;
     public GameObject itemPrefab;
     public PlayerMovement player;
+    public PlayerHealth health;
 
 
    
@@ -78,8 +79,27 @@ public class ShopManager : MonoBehaviour
             
             
         }
+        ApplyUpgrade(upgraded);
     }
-    public void ToggleShop()
+    public void ApplyUpgrade(Upgraded upgraded)
+    {
+        switch (upgraded.name)
+        {
+            case "hp":
+                {
+                    health.maxHp += 20;
+                    break;
+                }
+            case "speed":
+                {
+                    player.moveSpeed += 5f;
+                    break;
+                }
+
+        }
+    }
+
+public void ToggleShop()
     {
         ShopUI.SetActive(!ShopUI.activeSelf);
     }

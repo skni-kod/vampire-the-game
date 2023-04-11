@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [Header ("Health")]
-    [SerializeField] private int maxHp;
+     public int maxHp =100;
 
     private int currentHp;
     private Animator anim;
     // Start is called before the first frame update
     void Awake()
     {
-        maxHp = 100;
+       
         currentHp = maxHp;
         anim = GetComponent<Animator>();
     }
