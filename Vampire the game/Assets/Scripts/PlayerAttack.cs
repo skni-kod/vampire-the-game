@@ -32,8 +32,10 @@ public class PlayerAttack : MonoBehaviour
        
 
 
-            fireskulls[FindFireskull()].transform.position = firePoint.position,firePoint.rotation;
-            fireskulls[FindFireskull()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+            fireskulls[FindFireskull()].transform.position = firePoint.position;
+         fireskulls[FindFireskull()].transform.rotation = firePoint.rotation;
+
+        fireskulls[FindFireskull()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
 
         
     }
