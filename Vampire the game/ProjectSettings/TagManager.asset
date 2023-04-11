@@ -9,6 +9,8 @@ TagManager:
   - hidden_room
   - sky
   - Enemy
+  - Shop
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private GameObject Player;
     private Rigidbody2D rb;
     public bool IsGrounded;
+    float horizontalMove = 0f;
     public LayerMask WhatIsGround;
     public float groundCheckRadius;
     public Transform groundCheck;
@@ -27,15 +28,18 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, WhatIsGround);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        animator.SetFloat("moveSpeed", Mathf.Abs(Input.GetAxis("Horizontal")));
-        animator.SetBool("Jump", !IsGrounded);
+                horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
+                animator.SetFloat("moveSpeed", Mathf.Abs(horizontalMove));
+                animator.SetBool("Jump", !IsGrounded);
+            
         
+
         if (Input.GetAxis("Horizontal")> 0f)
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
@@ -61,5 +65,6 @@ public class PlayerMovement : MonoBehaviour
     {
         return IsGrounded && (Input.GetAxis("Horizontal") == 0);
     }
-   
+
+  
 }
